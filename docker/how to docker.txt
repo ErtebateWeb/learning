@@ -39,7 +39,11 @@ docker run -it --restart always busybox
 docker image build .
 docker image build -t web:1.2 .
 
+#docker tag
+docker image tag web:1.20 mmo/web:1.20
 
+# --rm                             Automatically remove the container when it exits
+docker run --rm busybox
 
 
 
