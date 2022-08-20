@@ -34,6 +34,11 @@ docker run -it --restart always busybox
 
 
 
+#Dockerfile
+
+docker image build .
+docker image build -t web:1.2 .
+
 
 
 
