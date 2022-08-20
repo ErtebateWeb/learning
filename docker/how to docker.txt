@@ -1,10 +1,73 @@
 #How to docker
 
-
+docker container run == docker run
 # Run container in background and print container ID
 # docker run  -d, --detach                         
 docker run --name redis_container_name -d redis
 docker run --name redis_container_name -dit redis
+
+
+#create container
+docker create --name bs busybox
+
+docker start busybox
+docker stop busybox
+docker restart busybox
+
+docker pause busybox
+docker unpause busybox
+
+
+docker exec busybox ls
+docker exec -it busybox bash
+
+
+
+#restart policy
+always
+unless-stopped
+on-failed
+
+
+
+docker run -it --restart always busybox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
