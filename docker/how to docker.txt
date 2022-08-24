@@ -48,6 +48,61 @@ docker run --rm busybox
 
 
 
+#Port forwarding
+--publis -p <host port>:<container port>/<tcp|udp>
+-p  8080:80
+-p 8080:80/tcp
+-p 8080:80/tcp -p 8080:80/udp
+-p 192.168.1.100:8080:80
+
+
+# load        Load an image from a tar archive or STDIN
+#save        Save one or more images to a tar archive (streamed to STDOUT by default)
+docker save -o bx.tar busybox:latest
+docker load -i bx.tar
+
+#docker commit ubn ubuntu:aaa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
