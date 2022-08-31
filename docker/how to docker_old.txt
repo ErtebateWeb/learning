@@ -1,0 +1,108 @@
+#mongard
+
+
+
+docker images
+sudo docker images
+
+#manage docker as a non-root user:
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+
+#shekan
+sudo nano /etc/resolve.conf 
+nameserver 185.51.200.2
+nameserver 178.22.122.100
+
+docker login
+
+#to download images
+docker pull hello-world
+
+docker run hello-world
+
+
+
+#list all images
+docker images
+
+
+docker run <hello-world>
+
+docker ps
+#to show all archives
+docker ps -a  
+
+docker container ls
+docker container ls -a
+
+
+docker help images
+#set name to container
+docker run --name <container-name> hello-world
+
+docker rm <container-name>
+
+#remove all stopped container
+docker container prune 
+#remove images
+docker rmi <image-name>
+
+docker run -it --rm busybox
+
+--rm to remove after run 
+-it for interactive terminal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
